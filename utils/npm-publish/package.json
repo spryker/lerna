@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/npm-publish",
+  "name": "@spryker-lerna/npm-publish",
   "version": "5.0.0",
   "description": "An internal Lerna tool",
   "keywords": [
@@ -31,8 +31,8 @@
     "test": "echo \"Run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/otplease": "file:../../core/otplease",
-    "@lerna/run-lifecycle": "file:../run-lifecycle",
+    "@spryker-lerna/otplease": "file:../../core/otplease",
+    "@spryker-lerna/run-lifecycle": "file:../run-lifecycle",
     "fs-extra": "^9.1.0",
     "libnpmpublish": "^4.0.0",
     "npm-package-arg": "^8.1.0",

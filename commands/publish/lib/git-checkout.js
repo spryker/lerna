@@ -1,7 +1,7 @@
 "use strict";
 
 const log = require("npmlog");
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 
 module.exports.gitCheckout = gitCheckout;
 
@@ -9,7 +9,7 @@ module.exports.gitCheckout = gitCheckout;
  * Reset files modified by publish steps.
  * @param {string[]} stagedFiles
  * @param {{ granularPathspec: boolean; }} gitOpts
- * @param {import("@lerna/child-process").ExecOpts} execOpts
+ * @param {import("@spryker-lerna/child-process").ExecOpts} execOpts
  */
 function gitCheckout(stagedFiles, gitOpts, execOpts) {
   const files = gitOpts.granularPathspec ? stagedFiles : ".";

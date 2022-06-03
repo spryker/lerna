@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/conventional-commits",
+  "name": "@spryker-lerna/conventional-commits",
   "version": "5.0.0",
   "description": "Lerna's internal interface to conventional-changelog and friends",
   "keywords": [
@@ -32,7 +32,7 @@
     "test": "echo \"Run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/validation-error": "file:../validation-error",
+    "@spryker-lerna/validation-error": "file:../validation-error",
     "conventional-changelog-angular": "^5.0.12",
     "conventional-changelog-core": "^4.2.2",
     "conventional-recommended-bump": "^6.1.0",

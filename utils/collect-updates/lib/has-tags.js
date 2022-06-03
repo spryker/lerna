@@ -1,13 +1,13 @@
 "use strict";
 
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 const log = require("npmlog");
 
 module.exports.hasTags = hasTags;
 
 /**
  * Determine if any git tags are reachable.
- * @param {import("@lerna/child-process").ExecOpts} opts
+ * @param {import("@spryker-lerna/child-process").ExecOpts} opts
  */
 function hasTags(opts) {
   log.silly("hasTags");

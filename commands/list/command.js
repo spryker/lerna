@@ -1,7 +1,7 @@
 "use strict";
 
-const { filterOptions } = require("@lerna/filter-options");
-const listable = require("@lerna/listable");
+const { filterOptions } = require("@spryker-lerna/filter-options");
+const listable = require("@spryker-lerna/listable");
 
 /**
  * @see https://github.com/yargs/yargs/blob/master/docs/advanced.md#providing-a-command-module

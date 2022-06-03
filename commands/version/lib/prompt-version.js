@@ -1,7 +1,7 @@
 "use strict";
 
 const semver = require("semver");
-const { promptSelectOne, promptTextInput } = require("@lerna/prompt");
+const { promptSelectOne, promptTextInput } = require("@spryker-lerna/prompt");
 
 module.exports.makePromptVersion = makePromptVersion;
 
@@ -9,7 +9,7 @@ module.exports.makePromptVersion = makePromptVersion;
  * @param {(existingPreid: string) => string} resolvePrereleaseId
  */
 function makePromptVersion(resolvePrereleaseId) {
-  return (/** @type {import("@lerna/package-graph").PackageGraphNode} */ node) =>
+  return (/** @type {import("@spryker-lerna/package-graph").PackageGraphNode} */ node) =>
     promptVersion(node.version, node.name, resolvePrereleaseId(node.prereleaseId));
 }
 

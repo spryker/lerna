@@ -2,7 +2,7 @@
 
 const chalk = require("chalk");
 const npmlog = require("npmlog");
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 
 module.exports.collectUncommitted = collectUncommitted;
 module.exports.collectUncommittedSync = collectUncommittedSync;

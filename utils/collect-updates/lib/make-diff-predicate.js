@@ -1,6 +1,6 @@
 "use strict";
 
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 const log = require("npmlog");
 const minimatch = require("minimatch");
 const path = require("path");
@@ -10,7 +10,7 @@ module.exports.makeDiffPredicate = makeDiffPredicate;
 
 /**
  * @param {string} committish
- * @param {import("@lerna/child-process").ExecOpts} execOpts
+ * @param {import("@spryker-lerna/child-process").ExecOpts} execOpts
  * @param {string[]} ignorePatterns
  */
 function makeDiffPredicate(committish, execOpts, ignorePatterns = []) {
@@ -29,7 +29,7 @@ function makeDiffPredicate(committish, execOpts, ignorePatterns = []) {
   }
 
   return function hasDiffSinceThatIsntIgnored(
-    /** @type {import("@lerna/package-graph").PackageGraphNode} */ node
+    /** @type {import("@spryker-lerna/package-graph").PackageGraphNode} */ node
   ) {
     const diff = diffSinceIn(committish, node.location, execOpts);
 
@@ -60,7 +60,7 @@ function makeDiffPredicate(committish, execOpts, ignorePatterns = []) {
 /**
  * @param {string} committish
  * @param {string} location
- * @param {import("@lerna/child-process").ExecOpts} opts
+ * @param {import("@spryker-lerna/child-process").ExecOpts} opts
  */
 function diffSinceIn(committish, location, opts) {
   const args = ["diff", "--name-only", committish];

@@ -8,7 +8,7 @@ module.exports.readExistingChangelog = readExistingChangelog;
 
 /**
  * Read the existing changelog, if it exists.
- * @param {import("@lerna/package").Package} pkg
+ * @param {import("@spryker-lerna/package").Package} pkg
  * @returns {Promise<[string, string]>} A tuple of changelog location and contents
  */
 function readExistingChangelog(pkg) {

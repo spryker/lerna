@@ -16,7 +16,7 @@ const fs = require("fs-extra");
 const path = require("path");
 
 // mocked modules
-const { packDirectory } = require("@lerna/pack-directory");
+const { packDirectory } = require("@spryker-lerna/pack-directory");
 const { createTempLicenses } = require("../lib/create-temp-licenses");
 const { removeTempLicenses } = require("../lib/remove-temp-licenses");
 

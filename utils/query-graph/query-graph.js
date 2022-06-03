@@ -1,6 +1,6 @@
 "use strict";
 
-const { PackageGraph } = require("@lerna/package-graph");
+const { PackageGraph } = require("@spryker-lerna/package-graph");
 
 /**
  * @typedef {object} QueryGraphConfig
@@ -15,10 +15,10 @@ class QueryGraph {
   /**
    * Sort a list of Packages topologically.
    *
-   * @param {import("@lerna/package").Package[]} packages An array of Packages to build the list out of
+   * @param {import("@spryker-lerna/package").Package[]} packages An array of Packages to build the list out of
    * @param {QueryGraphConfig} [options]
    *
-   * @returns {import("@lerna/package").Package[]} A list of Package instances in topological order
+   * @returns {import("@spryker-lerna/package").Package[]} A list of Package instances in topological order
    */
   static toposort(packages, options) {
     const graph = new QueryGraph(packages, options);
@@ -40,7 +40,7 @@ class QueryGraph {
   }
 
   /**
-   * @param {import("@lerna/package").Package[]} packages An array of Packages to build the graph out of
+   * @param {import("@spryker-lerna/package").Package[]} packages An array of Packages to build the graph out of
    * @param {QueryGraphConfig} [options]
    */
   constructor(packages, { graphType = "allDependencies", rejectCycles } = {}) {
@@ -86,7 +86,7 @@ class QueryGraph {
   }
 
   /**
-   * @param {import("@lerna/package-graph").PackageGraphNode} candidateNode
+   * @param {import("@spryker-lerna/package-graph").PackageGraphNode} candidateNode
    */
   markAsDone(candidateNode) {
     this.graph.remove(candidateNode);

@@ -1,20 +1,20 @@
 "use strict";
 
 const PQueue = require("p-queue").default;
-const { QueryGraph } = require("@lerna/query-graph");
+const { QueryGraph } = require("@spryker-lerna/query-graph");
 
 module.exports.runTopologically = runTopologically;
 
 /**
- * @typedef {import("@lerna/query-graph").QueryGraphConfig & { concurrency: number }} TopologicalConfig
+ * @typedef {import("@spryker-lerna/query-graph").QueryGraphConfig & { concurrency: number }} TopologicalConfig
  */
 
 /**
  * Run callback in maximally-saturated topological order.
  *
  * @template T
- * @param {import("@lerna/package").Package[]} packages List of `Package` instances
- * @param {(pkg: import("@lerna/package").Package) => Promise<T>} runner Callback to map each `Package` with
+ * @param {import("@spryker-lerna/package").Package[]} packages List of `Package` instances
+ * @param {(pkg: import("@spryker-lerna/package").Package) => Promise<T>} runner Callback to map each `Package` with
  * @param {TopologicalConfig} [options]
  * @returns {Promise<T[]>} when all executions complete
  */

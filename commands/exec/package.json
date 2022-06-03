@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/exec",
+  "name": "@spryker-lerna/exec",
   "version": "5.0.0",
   "description": "Execute an arbitrary command in each package",
   "keywords": [
@@ -32,12 +32,12 @@
     "test": "echo \"Run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/child-process": "file:../../core/child-process",
-    "@lerna/command": "file:../../core/command",
-    "@lerna/filter-options": "file:../../core/filter-options",
-    "@lerna/profiler": "file:../../utils/profiler",
-    "@lerna/run-topologically": "file:../../utils/run-topologically",
-    "@lerna/validation-error": "file:../../core/validation-error",
+    "@spryker-lerna/child-process": "file:../../core/child-process",
+    "@spryker-lerna/command": "file:../../core/command",
+    "@spryker-lerna/filter-options": "file:../../core/filter-options",
+    "@spryker-lerna/profiler": "file:../../utils/profiler",
+    "@spryker-lerna/run-topologically": "file:../../utils/run-topologically",
+    "@spryker-lerna/validation-error": "file:../../core/validation-error",
     "p-map": "^4.0.0"
   }
 }

@@ -152,7 +152,7 @@ function spawnProcess(command, args, opts) {
 }
 
 /**
- * @param {import("execa").ExecaChildProcess<string> & { pkg?: import("@lerna/package").Package }} spawned
+ * @param {import("execa").ExecaChildProcess<string> & { pkg?: import("@spryker-lerna/package").Package }} spawned
  */
 function wrapError(spawned) {
   if (spawned.pkg) {

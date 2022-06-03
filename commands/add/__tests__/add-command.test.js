@@ -1,15 +1,15 @@
 "use strict";
 
-jest.mock("@lerna/bootstrap");
+jest.mock("@spryker-lerna/bootstrap");
 jest.mock("pacote");
 
 // mocked or stubbed modules
-const bootstrap = require("@lerna/bootstrap");
+const bootstrap = require("@spryker-lerna/bootstrap");
 const pacote = require("pacote");
 
 // helpers
 const initFixture = require("@lerna-test/init-fixture")(__dirname);
-const { getPackages } = require("@lerna/project");
+const { getPackages } = require("@spryker-lerna/project");
 
 // file under test
 const lernaAdd = require("@lerna-test/command-runner")(require("../command"));

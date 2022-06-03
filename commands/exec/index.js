@@ -2,12 +2,12 @@
 
 const pMap = require("p-map");
 
-const childProcess = require("@lerna/child-process");
-const { Command } = require("@lerna/command");
-const { Profiler } = require("@lerna/profiler");
-const { runTopologically } = require("@lerna/run-topologically");
-const { ValidationError } = require("@lerna/validation-error");
-const { getFilteredPackages } = require("@lerna/filter-options");
+const childProcess = require("@spryker-lerna/child-process");
+const { Command } = require("@spryker-lerna/command");
+const { Profiler } = require("@spryker-lerna/profiler");
+const { runTopologically } = require("@spryker-lerna/run-topologically");
+const { ValidationError } = require("@spryker-lerna/validation-error");
+const { getFilteredPackages } = require("@spryker-lerna/filter-options");
 
 module.exports = factory;
 

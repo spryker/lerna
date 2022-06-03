@@ -5,7 +5,7 @@ const path = require("path");
 const chalk = require("chalk");
 
 // helpers
-const { getPackages } = require("@lerna/project");
+const { getPackages } = require("@spryker-lerna/project");
 const { gitAdd } = require("@lerna-test/git-add");
 const initFixture = require("@lerna-test/init-fixture")(__dirname);
 

@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/output",
+  "name": "@spryker-lerna/output",
   "version": "5.0.0",
   "description": "An internal Lerna tool",
   "keywords": [

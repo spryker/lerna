@@ -3,14 +3,14 @@
 const log = require("npmlog");
 const path = require("path");
 const slash = require("slash");
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 
 module.exports.gitAdd = gitAdd;
 
 /**
  * @param {string[]} changedFiles
  * @param {{ granularPathspec: boolean; }} gitOpts
- * @param {import("@lerna/child-process").ExecOpts} execOpts
+ * @param {import("@spryker-lerna/child-process").ExecOpts} execOpts
  */
 function gitAdd(changedFiles, gitOpts, execOpts) {
   // granular pathspecs should be relative to the git root, but that isn't necessarily where lerna lives

@@ -12,10 +12,10 @@ const execa = require("execa");
 
 // mocked or stubbed modules
 const writePkg = require("write-pkg");
-const { promptConfirmation, promptSelectOne } = require("@lerna/prompt");
-const { collectUpdates } = require("@lerna/collect-updates");
-const { output } = require("@lerna/output");
-const { checkWorkingTree, throwIfUncommitted } = require("@lerna/check-working-tree");
+const { promptConfirmation, promptSelectOne } = require("@spryker-lerna/prompt");
+const { collectUpdates } = require("@spryker-lerna/collect-updates");
+const { output } = require("@spryker-lerna/output");
+const { checkWorkingTree, throwIfUncommitted } = require("@spryker-lerna/check-working-tree");
 const { gitPush: libPush } = require("../lib/git-push");
 const { isAnythingCommitted } = require("../lib/is-anything-committed");
 const { isBehindUpstream } = require("../lib/is-behind-upstream");
@@ -34,7 +34,7 @@ const { getCommitMessage } = require("@lerna-test/get-commit-message");
 const lernaVersion = require("@lerna-test/command-runner")(require("../command"));
 
 // certain tests need to use the real thing
-const collectUpdatesActual = jest.requireActual("@lerna/collect-updates").collectUpdates;
+const collectUpdatesActual = jest.requireActual("@spryker-lerna/collect-updates").collectUpdates;
 
 // assertion helpers
 const listDirty = (cwd) =>

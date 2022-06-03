@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/project",
+  "name": "@spryker-lerna/project",
   "version": "5.0.0",
   "description": "Lerna project configuration",
   "keywords": [
@@ -32,8 +32,8 @@
     "test": "echo \"Run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/package": "file:../package",
-    "@lerna/validation-error": "file:../validation-error",
+    "@spryker-lerna/package": "file:../package",
+    "@spryker-lerna/validation-error": "file:../validation-error",
     "cosmiconfig": "^7.0.0",
     "dedent": "^0.7.0",
     "dot-prop": "^6.0.1",

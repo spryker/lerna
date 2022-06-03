@@ -2,14 +2,14 @@
 
 const pMap = require("p-map");
 
-const { Command } = require("@lerna/command");
-const { npmRunScript, npmRunScriptStreaming } = require("@lerna/npm-run-script");
-const { output } = require("@lerna/output");
-const { Profiler } = require("@lerna/profiler");
-const { timer } = require("@lerna/timer");
-const { runTopologically } = require("@lerna/run-topologically");
-const { ValidationError } = require("@lerna/validation-error");
-const { getFilteredPackages } = require("@lerna/filter-options");
+const { Command } = require("@spryker-lerna/command");
+const { npmRunScript, npmRunScriptStreaming } = require("@spryker-lerna/npm-run-script");
+const { output } = require("@spryker-lerna/output");
+const { Profiler } = require("@spryker-lerna/profiler");
+const { timer } = require("@spryker-lerna/timer");
+const { runTopologically } = require("@spryker-lerna/run-topologically");
+const { ValidationError } = require("@spryker-lerna/validation-error");
+const { getFilteredPackages } = require("@spryker-lerna/filter-options");
 const { performance } = require("perf_hooks");
 
 module.exports = factory;

@@ -1,9 +1,9 @@
 "use strict";
 
-jest.mock("@lerna/prompt");
+jest.mock("@spryker-lerna/prompt");
 
 // mocked modules
-const { promptTextInput } = require("@lerna/prompt");
+const { promptTextInput } = require("@spryker-lerna/prompt");
 
 // file under test
 const { otplease, getOneTimePassword } = require("..");
@@ -11,7 +11,7 @@ const { otplease, getOneTimePassword } = require("..");
 // global mock setup
 promptTextInput.mockResolvedValue("123456");
 
-describe("@lerna/otplease", () => {
+describe("@spryker-lerna/otplease", () => {
   const stdinIsTTY = process.stdin.isTTY;
   const stdoutIsTTY = process.stdout.isTTY;
 

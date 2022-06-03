@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/get-packed",
+  "name": "@spryker-lerna/get-packed",
   "version": "5.0.0",
   "description": "Read contents of package tarball created by npm pack",
   "keywords": [

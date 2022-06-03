@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/npm-dist-tag",
+  "name": "@spryker-lerna/npm-dist-tag",
   "version": "5.0.0",
   "description": "An internal Lerna tool",
   "keywords": [
@@ -32,7 +32,7 @@
     "test": "echo \"Run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/otplease": "file:../../core/otplease",
+    "@spryker-lerna/otplease": "file:../../core/otplease",
     "npm-package-arg": "^8.1.0",
     "npm-registry-fetch": "^9.0.0",
     "npmlog": "^4.1.2"

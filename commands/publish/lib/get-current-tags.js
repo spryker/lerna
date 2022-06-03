@@ -2,13 +2,13 @@
 
 const log = require("npmlog");
 const npa = require("npm-package-arg");
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 
 module.exports.getCurrentTags = getCurrentTags;
 
 /**
  * Retrieve a list of git tags pointing to the current HEAD that match the provided pattern.
- * @param {import("@lerna/child-process").ExecOpts} execOpts
+ * @param {import("@spryker-lerna/child-process").ExecOpts} execOpts
  * @param {string} matchingPattern
  * @returns {string[]}
  */

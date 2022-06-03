@@ -6,8 +6,8 @@ jest.mock("pacote");
 const pacote = require("pacote");
 
 // helpers
-const { PackageGraph } = require("@lerna/package-graph");
-const { getPackages } = require("@lerna/project");
+const { PackageGraph } = require("@spryker-lerna/package-graph");
+const { getPackages } = require("@spryker-lerna/project");
 const initFixture = require("@lerna-test/init-fixture")(__dirname);
 
 // file under test

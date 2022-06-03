@@ -1,8 +1,8 @@
 "use strict";
 
 const log = require("npmlog");
-const { collectUpdates } = require("@lerna/collect-updates");
-const { filterPackages } = require("@lerna/filter-packages");
+const { collectUpdates } = require("@spryker-lerna/collect-updates");
+const { filterPackages } = require("@spryker-lerna/filter-packages");
 
 module.exports.getFilteredPackages = getFilteredPackages;
 
@@ -22,10 +22,10 @@ module.exports.getFilteredPackages = getFilteredPackages;
 
 /**
  * Retrieve a list of Package instances filtered by various options.
- * @param {import("@lerna/package-graph").PackageGraph} packageGraph
- * @param {import("@lerna/child-process").ExecOpts} execOpts
+ * @param {import("@spryker-lerna/package-graph").PackageGraph} packageGraph
+ * @param {import("@spryker-lerna/child-process").ExecOpts} execOpts
  * @param {Partial<FilterOptions>} opts
- * @returns {Promise<import("@lerna/package").Package[]>}
+ * @returns {Promise<import("@spryker-lerna/package").Package[]>}
  */
 function getFilteredPackages(packageGraph, execOpts, opts) {
   const options = { log, ...opts };

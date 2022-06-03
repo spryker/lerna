@@ -17,10 +17,10 @@ const path = require("path");
 
 // mocked or stubbed modules
 const writePkg = require("write-pkg");
-const { npmPublish } = require("@lerna/npm-publish");
-const { promptConfirmation } = require("@lerna/prompt");
-const { output } = require("@lerna/output");
-const { throwIfUncommitted } = require("@lerna/check-working-tree");
+const { npmPublish } = require("@spryker-lerna/npm-publish");
+const { promptConfirmation } = require("@spryker-lerna/prompt");
+const { output } = require("@spryker-lerna/output");
+const { throwIfUncommitted } = require("@spryker-lerna/check-working-tree");
 const { getUnpublishedPackages } = require("../lib/get-unpublished-packages");
 
 // helpers

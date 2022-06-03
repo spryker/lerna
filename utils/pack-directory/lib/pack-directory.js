@@ -4,10 +4,10 @@ const path = require("path");
 const packlist = require("npm-packlist");
 const log = require("npmlog");
 const tar = require("tar");
-const tempWrite = require("@lerna/temp-write");
-const { getPacked } = require("@lerna/get-packed");
-const { Package } = require("@lerna/package");
-const { runLifecycle } = require("@lerna/run-lifecycle");
+const tempWrite = require("@spryker-lerna/temp-write");
+const { getPacked } = require("@spryker-lerna/get-packed");
+const { Package } = require("@spryker-lerna/package");
+const { runLifecycle } = require("@spryker-lerna/run-lifecycle");
 
 module.exports.packDirectory = packDirectory;
 

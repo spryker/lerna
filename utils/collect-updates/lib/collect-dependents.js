@@ -4,14 +4,14 @@ module.exports.collectDependents = collectDependents;
 
 /**
  * @callback LocalDependentVisitor
- * @param {import("@lerna/package-graph").PackageGraphNode} dependentNode
+ * @param {import("@spryker-lerna/package-graph").PackageGraphNode} dependentNode
  * @param {string} dependentName
- * @param {Map<string, import("@lerna/package-graph").PackageGraphNode>} siblingDependents
+ * @param {Map<string, import("@spryker-lerna/package-graph").PackageGraphNode>} siblingDependents
  */
 
 /**
  * Build a set of nodes that are dependents of the input set.
- * @param {Set<import("@lerna/package-graph").PackageGraphNode>} nodes
+ * @param {Set<import("@spryker-lerna/package-graph").PackageGraphNode>} nodes
  */
 function collectDependents(nodes) {
   /** @type {typeof nodes} */

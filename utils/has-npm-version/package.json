@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/has-npm-version",
+  "name": "@spryker-lerna/has-npm-version",
   "version": "5.0.0",
   "description": "Test if the current version of npm satisfies a given semver range",
   "keywords": [
@@ -28,7 +28,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/child-process": "file:../../core/child-process",
+    "@spryker-lerna/child-process": "file:../../core/child-process",
     "semver": "^7.3.4"
   }
 }

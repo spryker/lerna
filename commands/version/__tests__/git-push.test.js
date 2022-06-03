@@ -1,7 +1,7 @@
 "use strict";
 
 const execa = require("execa");
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 const cloneFixture = require("@lerna-test/clone-fixture")(__dirname);
 const { gitPush } = require("../lib/git-push");
 

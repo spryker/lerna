@@ -1,13 +1,13 @@
 "use strict";
 
 const log = require("npmlog");
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 
 module.exports.getCurrentSHA = getCurrentSHA;
 
 /**
  * Retrieve current SHA from git.
- * @param {import("@lerna/child-process").ExecOpts} opts
+ * @param {import("@spryker-lerna/child-process").ExecOpts} opts
  */
 function getCurrentSHA(opts) {
   log.silly("getCurrentSHA");

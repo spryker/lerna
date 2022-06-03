@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/cli",
+  "name": "@spryker-lerna/cli",
   "version": "5.0.0",
   "description": "Lerna's CLI",
   "keywords": [
@@ -31,7 +31,7 @@
     "test": "echo \"Run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/global-options": "file:../global-options",
+    "@spryker-lerna/global-options": "file:../global-options",
     "dedent": "^0.7.0",
     "npmlog": "^4.1.2",
     "yargs": "^16.2.0"

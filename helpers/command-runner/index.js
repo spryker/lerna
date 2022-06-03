@@ -1,7 +1,7 @@
 "use strict";
 
 const path = require("path");
-const lernaCLI = require("@lerna/cli");
+const lernaCLI = require("@spryker-lerna/cli");
 
 module.exports = commandRunner;
 

@@ -7,11 +7,11 @@ const path = require("path");
 const pacote = require("pacote");
 const semver = require("semver");
 
-const { Command } = require("@lerna/command");
-const npmConf = require("@lerna/npm-conf");
-const bootstrap = require("@lerna/bootstrap");
-const { ValidationError } = require("@lerna/validation-error");
-const { getFilteredPackages } = require("@lerna/filter-options");
+const { Command } = require("@spryker-lerna/command");
+const npmConf = require("@spryker-lerna/npm-conf");
+const bootstrap = require("@spryker-lerna/bootstrap");
+const { ValidationError } = require("@spryker-lerna/validation-error");
+const { getFilteredPackages } = require("@spryker-lerna/filter-options");
 const { getRangeToReference } = require("./lib/get-range-to-reference");
 
 module.exports = factory;

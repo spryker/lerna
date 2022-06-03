@@ -5,11 +5,11 @@ const fs = require("fs-extra");
 const path = require("path");
 const pMapSeries = require("p-map-series");
 
-const childProcess = require("@lerna/child-process");
-const { Command } = require("@lerna/command");
-const { promptConfirmation } = require("@lerna/prompt");
-const { ValidationError } = require("@lerna/validation-error");
-const { pulseTillDone } = require("@lerna/pulse-till-done");
+const childProcess = require("@spryker-lerna/child-process");
+const { Command } = require("@spryker-lerna/command");
+const { promptConfirmation } = require("@spryker-lerna/prompt");
+const { ValidationError } = require("@spryker-lerna/validation-error");
+const { pulseTillDone } = require("@spryker-lerna/pulse-till-done");
 
 module.exports = factory;
 

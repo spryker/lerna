@@ -1,13 +1,13 @@
 "use strict";
 
 jest.mock("path-exists");
-jest.mock("@lerna/child-process");
+jest.mock("@spryker-lerna/child-process");
 
 const path = require("path");
 
 // mocked modules
 const pathExists = require("path-exists");
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 
 // file under test
 const { rimrafDir } = require("..");

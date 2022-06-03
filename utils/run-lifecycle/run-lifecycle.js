@@ -4,7 +4,7 @@
 
 const log = require("npmlog");
 const runScript = require("@npmcli/run-script");
-const npmConf = require("@lerna/npm-conf");
+const npmConf = require("@spryker-lerna/npm-conf");
 
 module.exports.runLifecycle = runLifecycle;
 module.exports.createRunner = createRunner;
@@ -48,12 +48,12 @@ function printCommandBanner(id, event, cmd, path) {
 
 /**
  * Run a lifecycle script for a package.
- * @param {import("@lerna/package").Package} pkg
+ * @param {import("@spryker-lerna/package").Package} pkg
  * @param {string} stage
  * @param {LifecycleConfig} options
  */
 function runLifecycle(pkg, stage, options) {
-  // back-compat for @lerna/npm-conf instances
+  // back-compat for @spryker-lerna/npm-conf instances
   // https://github.com/isaacs/proto-list/blob/27764cd/proto-list.js#L14
   if ("root" in options) {
     // eslint-disable-next-line no-param-reassign

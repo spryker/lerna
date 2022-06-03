@@ -7,7 +7,7 @@ const fs = require("fs-extra");
 const loadJsonFile = require("load-json-file");
 
 // helpers
-const { getPackages } = require("@lerna/project");
+const { getPackages } = require("@spryker-lerna/project");
 const initFixture = require("@lerna-test/init-fixture")(__dirname);
 
 const { updateLockfileVersion } = require("../lib/update-lockfile-version");

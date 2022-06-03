@@ -8,7 +8,7 @@ const { getChangelogConfig } = require("./get-changelog-config");
 module.exports.recommendVersion = recommendVersion;
 
 /**
- * @param {import("@lerna/package").Package} pkg
+ * @param {import("@spryker-lerna/package").Package} pkg
  * @param {import("..").VersioningStrategy} type
  * @param {import("..").BaseChangelogOptions & { prereleaseId?: string }} commandOptions
  */

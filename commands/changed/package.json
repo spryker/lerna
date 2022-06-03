@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/changed",
+  "name": "@spryker-lerna/changed",
   "version": "5.0.0",
   "description": "List local packages that have changed since the last tagged release",
   "keywords": [
@@ -32,9 +32,9 @@
     "test": "echo \"Run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/collect-updates": "file:../../utils/collect-updates",
-    "@lerna/command": "file:../../core/command",
-    "@lerna/listable": "file:../../utils/listable",
-    "@lerna/output": "file:../../utils/output"
+    "@spryker-lerna/collect-updates": "file:../../utils/collect-updates",
+    "@spryker-lerna/command": "file:../../core/command",
+    "@spryker-lerna/listable": "file:../../utils/listable",
+    "@spryker-lerna/output": "file:../../utils/output"
   }
 }

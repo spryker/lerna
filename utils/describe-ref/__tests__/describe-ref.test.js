@@ -1,8 +1,8 @@
 "use strict";
 
-jest.mock("@lerna/child-process");
+jest.mock("@spryker-lerna/child-process");
 
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 const { describeRef, describeRefSync } = require("../lib/describe-ref");
 
 const DEFAULT_ARGS = ["describe", "--always", "--long", "--dirty", "--first-parent"];

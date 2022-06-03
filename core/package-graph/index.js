@@ -1,7 +1,7 @@
 "use strict";
 
 const npa = require("npm-package-arg");
-const { ValidationError } = require("@lerna/validation-error");
+const { ValidationError } = require("@spryker-lerna/validation-error");
 const { CyclicPackageGraphNode } = require("./lib/cyclic-package-graph-node");
 const { PackageGraphNode } = require("./lib/package-graph-node");
 const { reportCycles } = require("./lib/report-cycles");
@@ -15,7 +15,7 @@ const { reportCycles } = require("./lib/report-cycles");
  */
 class PackageGraph extends Map {
   /**
-   * @param {import("@lerna/package").Package[]} packages An array of Packages to build the graph out of.
+   * @param {import("@spryker-lerna/package").Package[]} packages An array of Packages to build the graph out of.
    * @param {'allDependencies'|'dependencies'} [graphType]
    *    Pass "dependencies" to create a graph of only dependencies,
    *    excluding the devDependencies that would normally be included.
@@ -91,7 +91,7 @@ class PackageGraph extends Map {
    * they depend on. i.e if packageA depended on packageB `graph.addDependencies([packageA])`
    * would return [packageA, packageB].
    *
-   * @param {import("@lerna/package").Package[]} filteredPackages The packages to include dependencies for.
+   * @param {import("@spryker-lerna/package").Package[]} filteredPackages The packages to include dependencies for.
    */
   addDependencies(filteredPackages) {
     return this.extendList(filteredPackages, "localDependencies");
@@ -102,7 +102,7 @@ class PackageGraph extends Map {
    * that depend on them. i.e if packageC depended on packageD `graph.addDependents([packageD])`
    * would return [packageD, packageC].
    *
-   * @param {import("@lerna/package").Package[]} filteredPackages The packages to include dependents for.
+   * @param {import("@spryker-lerna/package").Package[]} filteredPackages The packages to include dependents for.
    */
   addDependents(filteredPackages) {
     return this.extendList(filteredPackages, "localDependents");
@@ -113,7 +113,7 @@ class PackageGraph extends Map {
    * `PackageGraphNode` property that is a collection of `PackageGraphNode`s.
    * Returns input packages with any additional packages found by traversing `nodeProp`.
    *
-   * @param {import("@lerna/package").Package[]} packageList The list of packages to extend
+   * @param {import("@spryker-lerna/package").Package[]} packageList The list of packages to extend
    * @param {'localDependencies'|'localDependents'} nodeProp The property on `PackageGraphNode` used to traverse
    */
   extendList(packageList, nodeProp) {

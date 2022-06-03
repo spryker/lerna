@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/collect-uncommitted",
+  "name": "@spryker-lerna/collect-uncommitted",
   "version": "5.0.0",
   "description": "Collect uncommitted changes to working tree for display in error messages",
   "keywords": [
@@ -33,7 +33,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/child-process": "file:../../core/child-process",
+    "@spryker-lerna/child-process": "file:../../core/child-process",
     "chalk": "^4.1.0",
     "npmlog": "^4.1.2"
   }

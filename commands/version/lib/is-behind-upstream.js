@@ -1,14 +1,14 @@
 "use strict";
 
 const log = require("npmlog");
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 
 module.exports.isBehindUpstream = isBehindUpstream;
 
 /**
  * @param {string} gitRemote
  * @param {string} branch
- * @param {import("@lerna/child-process").ExecOpts} opts
+ * @param {import("@spryker-lerna/child-process").ExecOpts} opts
  */
 function isBehindUpstream(gitRemote, branch, opts) {
   log.silly("isBehindUpstream");
@@ -27,7 +27,7 @@ function isBehindUpstream(gitRemote, branch, opts) {
 }
 
 /**
- * @param {import("@lerna/command").ExecOpts} opts
+ * @param {import("@spryker-lerna/command").ExecOpts} opts
  */
 function updateRemote(opts) {
   // git fetch, but for everything
@@ -36,7 +36,7 @@ function updateRemote(opts) {
 
 /**
  * @param {string} symmetricDifference
- * @param {import("@lerna/command").ExecOpts} opts
+ * @param {import("@spryker-lerna/command").ExecOpts} opts
  */
 function countLeftRight(symmetricDifference, opts) {
   const stdout = childProcess.execSync(

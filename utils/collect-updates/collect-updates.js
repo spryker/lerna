@@ -1,7 +1,7 @@
 "use strict";
 
 const log = require("npmlog");
-const { describeRefSync } = require("@lerna/describe-ref");
+const { describeRefSync } = require("@spryker-lerna/describe-ref");
 
 const { hasTags } = require("./lib/has-tags");
 const { collectPackages } = require("./lib/collect-packages");
@@ -32,9 +32,9 @@ module.exports.getPackagesForOption = getPackagesForOption;
 
 /**
  * Create a list of graph nodes representing packages changed since the previous release, tagged or otherwise.
- * @param {import("@lerna/package").Package[]} filteredPackages
- * @param {import("@lerna/package-graph").PackageGraph} packageGraph
- * @param {import("@lerna/child-process").ExecOpts} execOpts
+ * @param {import("@spryker-lerna/package").Package[]} filteredPackages
+ * @param {import("@spryker-lerna/package-graph").PackageGraph} packageGraph
+ * @param {import("@spryker-lerna/child-process").ExecOpts} execOpts
  * @param {UpdateCollectorOptions} commandOptions
  */
 function collectUpdates(filteredPackages, packageGraph, execOpts, commandOptions) {

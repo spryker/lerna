@@ -1,7 +1,7 @@
 "use strict";
 
 // we're actually testing integration with git
-jest.unmock("@lerna/collect-updates");
+jest.unmock("@spryker-lerna/collect-updates");
 
 // local modules _must_ be explicitly mocked
 jest.mock("../lib/get-packages-without-license");
@@ -16,10 +16,10 @@ jest.mock("../../version/lib/is-behind-upstream");
 jest.mock("../../version/lib/remote-branch-exists");
 
 // mocked or stubbed modules
-const { npmPublish } = require("@lerna/npm-publish");
-const { promptConfirmation } = require("@lerna/prompt");
-const { output } = require("@lerna/output");
-const { throwIfUncommitted } = require("@lerna/check-working-tree");
+const { npmPublish } = require("@spryker-lerna/npm-publish");
+const { promptConfirmation } = require("@spryker-lerna/prompt");
+const { output } = require("@spryker-lerna/output");
+const { throwIfUncommitted } = require("@spryker-lerna/check-working-tree");
 
 // helpers
 const { loggingOutput } = require("@lerna-test/logging-output");

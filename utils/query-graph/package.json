@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/query-graph",
+  "name": "@spryker-lerna/query-graph",
   "version": "5.0.0",
   "description": "An internal Lerna tool",
   "keywords": [
@@ -31,6 +31,6 @@
     "test": "echo \"Run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/package-graph": "file:../../core/package-graph"
+    "@spryker-lerna/package-graph": "file:../../core/package-graph"
   }
 }

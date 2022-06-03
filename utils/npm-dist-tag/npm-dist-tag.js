@@ -3,7 +3,7 @@
 const log = require("npmlog");
 const npa = require("npm-package-arg");
 const fetch = require("npm-registry-fetch");
-const { otplease } = require("@lerna/otplease");
+const { otplease } = require("@spryker-lerna/otplease");
 
 exports.add = add;
 exports.remove = remove;
@@ -18,7 +18,7 @@ exports.list = list;
  * @param {string} spec
  * @param {string} [tag]
  * @param {DistTagOptions} options
- * @param {import("@lerna/otplease").OneTimePasswordCache} otpCache
+ * @param {import("@spryker-lerna/otplease").OneTimePasswordCache} otpCache
  */
 function add(spec, tag, options, otpCache) {
   const opts = {
@@ -74,7 +74,7 @@ function add(spec, tag, options, otpCache) {
  * @param {string} spec
  * @param {string} tag
  * @param {DistTagOptions} options
- * @param {import("@lerna/otplease").OneTimePasswordCache} otpCache
+ * @param {import("@spryker-lerna/otplease").OneTimePasswordCache} otpCache
  */
 function remove(spec, tag, options, otpCache) {
   const opts = {

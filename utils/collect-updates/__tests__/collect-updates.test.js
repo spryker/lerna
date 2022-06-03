@@ -1,11 +1,11 @@
 "use strict";
 
-jest.mock("@lerna/describe-ref");
+jest.mock("@spryker-lerna/describe-ref");
 jest.mock("../lib/has-tags");
 jest.mock("../lib/make-diff-predicate");
 
 // mocked modules
-const { describeRefSync } = require("@lerna/describe-ref");
+const { describeRefSync } = require("@spryker-lerna/describe-ref");
 const { hasTags } = require("../lib/has-tags");
 const { makeDiffPredicate } = require("../lib/make-diff-predicate");
 

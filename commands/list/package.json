@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/list",
+  "name": "@spryker-lerna/list",
   "version": "5.0.0",
   "description": "List local packages",
   "keywords": [
@@ -32,9 +32,9 @@
     "test": "echo \"Run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/command": "file:../../core/command",
-    "@lerna/filter-options": "file:../../core/filter-options",
-    "@lerna/listable": "file:../../utils/listable",
-    "@lerna/output": "file:../../utils/output"
+    "@spryker-lerna/command": "file:../../core/command",
+    "@spryker-lerna/filter-options": "file:../../core/filter-options",
+    "@spryker-lerna/listable": "file:../../utils/listable",
+    "@spryker-lerna/output": "file:../../utils/output"
   }
 }

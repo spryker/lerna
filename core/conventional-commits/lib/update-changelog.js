@@ -12,7 +12,7 @@ const { readExistingChangelog } = require("./read-existing-changelog");
 module.exports.updateChangelog = updateChangelog;
 
 /**
- * @param {import("@lerna/package").Package} pkg
+ * @param {import("@spryker-lerna/package").Package} pkg
  * @param {import("..").ChangelogType} type
  * @param {import("..").BaseChangelogOptions & { version?: string }} commandOptions
  */

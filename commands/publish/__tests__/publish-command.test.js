@@ -1,6 +1,6 @@
 "use strict";
 
-jest.mock("@lerna/otplease");
+jest.mock("@spryker-lerna/otplease");
 
 // local modules _must_ be explicitly mocked
 jest.mock("../lib/get-packages-without-license");
@@ -16,12 +16,12 @@ jest.mock("../../version/lib/is-behind-upstream");
 jest.mock("../../version/lib/remote-branch-exists");
 
 // mocked or stubbed modules
-const { getOneTimePassword } = require("@lerna/otplease");
-const npmDistTag = require("@lerna/npm-dist-tag");
-const { npmPublish } = require("@lerna/npm-publish");
-const { packDirectory } = require("@lerna/pack-directory");
-const { promptConfirmation } = require("@lerna/prompt");
-const { collectUpdates } = require("@lerna/collect-updates");
+const { getOneTimePassword } = require("@spryker-lerna/otplease");
+const npmDistTag = require("@spryker-lerna/npm-dist-tag");
+const { npmPublish } = require("@spryker-lerna/npm-publish");
+const { packDirectory } = require("@spryker-lerna/pack-directory");
+const { promptConfirmation } = require("@spryker-lerna/prompt");
+const { collectUpdates } = require("@spryker-lerna/collect-updates");
 const { getNpmUsername } = require("../lib/get-npm-username");
 const { verifyNpmPackageAccess } = require("../lib/verify-npm-package-access");
 const { getTwoFactorAuthRequired } = require("../lib/get-two-factor-auth-required");
@@ -138,7 +138,7 @@ Map {
 
       expect(getTwoFactorAuthRequired).toHaveBeenCalled();
       expect(getTwoFactorAuthRequired).toHaveBeenLastCalledWith(
-        // extra insurance that @lerna/npm-conf is defaulting things correctly
+        // extra insurance that @spryker-lerna/npm-conf is defaulting things correctly
         expect.objectContaining({ otp: undefined })
       );
 

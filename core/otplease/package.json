@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/otplease",
+  "name": "@spryker-lerna/otplease",
   "version": "5.0.0",
   "description": "Prompt for OTP when wrapped Promise fails",
   "keywords": [
@@ -31,6 +31,6 @@
     "test": "echo \"Run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/prompt": "file:../prompt"
+    "@spryker-lerna/prompt": "file:../prompt"
   }
 }

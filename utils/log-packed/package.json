@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/log-packed",
+  "name": "@spryker-lerna/log-packed",
   "version": "5.0.0",
   "description": "Log the result of npm pack --json",
   "keywords": [
