@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/lerna/lerna/compare/v5.0.0...v5.1.0) (2022-06-03)
+
+
+### Bug Fixes
+
+* **scope:** update packages scopes ([eb0de43](https://github.com/lerna/lerna/commit/eb0de43bd84b51c89611375cef841d189c74335c))
+
+
+### Features
+
+* add experimental support to run tasks via Nx ([1c35828](https://github.com/lerna/lerna/commit/1c358286c8425d1720580859c4b42e15a3b15eac))
+
+
+
+
+
 # [5.0.0](https://github.com/lerna/lerna/compare/v4.0.0...v5.0.0) (2022-05-24)
 
 Lerna workspaces no longer have dependency deprecation warnings.
