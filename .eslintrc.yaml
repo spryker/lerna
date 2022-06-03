@@ -9,6 +9,9 @@ plugins:
   - node
   - prettier
 rules:
+  # Temporarily disable until first publish
+  import/no-unresolved: "off"
+  node/no-missing-require: "off"
   class-methods-use-this:
     - error
     - exceptMethods:
