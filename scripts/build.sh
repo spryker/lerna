@@ -14,12 +14,12 @@ workspaceRoot=$(pwd)
 rm -rf ./dist
 
 # Resolve the packages using lerna itself
-IFS=$'\n' read -d '' -a packageLocations < <((jq -c -r '.[].location') <<<"$(npx lerna list --json)")
+IFS=$'\n' read -d '' -a packageLocations < <(npx lerna exec 'node -e "console.log(process.cwd())"')
 
 for packageLocation in "${packageLocations[@]}"; do
   newLocation=$(echo "./dist/${packageLocation#${workspaceRoot}/}/")
   mkdir -p $newLocation
-  cp -R $packageLocation/ $newLocation
+  cp -R $packageLocation/** $newLocation
 done
 
 echo "Successfully copied all ${#packageLocations[@]} packages to ./dist"
