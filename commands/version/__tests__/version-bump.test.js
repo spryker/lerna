@@ -9,7 +9,7 @@ jest.mock("../lib/remote-branch-exists");
 const path = require("path");
 
 // mocked modules
-const { promptSelectOne } = require("@lerna/prompt");
+const { promptSelectOne } = require("@spryker-lerna/prompt");
 
 // helpers
 const initFixture = require("@lerna-test/init-fixture")(path.resolve(__dirname, "../../publish/__tests__"));

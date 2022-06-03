@@ -1,13 +1,13 @@
 "use strict";
 
-jest.mock("@lerna/npm-run-script");
+jest.mock("@spryker-lerna/npm-run-script");
 
 const fs = require("fs-extra");
 const globby = require("globby");
 
 // mocked modules
-const { npmRunScript, npmRunScriptStreaming } = require("@lerna/npm-run-script");
-const { output } = require("@lerna/output");
+const { npmRunScript, npmRunScriptStreaming } = require("@spryker-lerna/npm-run-script");
+const { output } = require("@spryker-lerna/output");
 
 // helpers
 const initFixture = require("@lerna-test/init-fixture")(__dirname);

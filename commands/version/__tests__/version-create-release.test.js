@@ -10,9 +10,9 @@ jest.mock("../lib/is-behind-upstream");
 jest.mock("../lib/remote-branch-exists");
 
 // mocked modules
-const { createGitHubClient } = require("@lerna/github-client");
-const { createGitLabClient } = require("@lerna/gitlab-client");
-const { recommendVersion } = require("@lerna/conventional-commits");
+const { createGitHubClient } = require("@spryker-lerna/github-client");
+const { createGitLabClient } = require("@spryker-lerna/gitlab-client");
+const { recommendVersion } = require("@spryker-lerna/conventional-commits");
 
 // helpers
 const initFixture = require("@lerna-test/init-fixture")(__dirname);

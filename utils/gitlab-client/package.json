@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/gitlab-client",
+  "name": "@spryker-lerna/gitlab-client",
   "version": "5.0.0",
   "description": "An internal Lerna tool",
   "keywords": [

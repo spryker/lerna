@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/run-lifecycle",
+  "name": "@spryker-lerna/run-lifecycle",
   "version": "5.0.0",
   "description": "An internal Lerna tool",
   "keywords": [
@@ -31,7 +31,7 @@
     "test": "echo \"Run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/npm-conf": "file:../npm-conf",
+    "@spryker-lerna/npm-conf": "file:../npm-conf",
     "@npmcli/run-script": "^3.0.2",
     "npmlog": "^4.1.2"
   }

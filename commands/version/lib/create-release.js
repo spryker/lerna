@@ -2,9 +2,9 @@
 
 const semver = require("semver");
 
-const { createGitLabClient } = require("@lerna/gitlab-client");
-const { createGitHubClient, parseGitRepo } = require("@lerna/github-client");
-const { ValidationError } = require("@lerna/validation-error");
+const { createGitLabClient } = require("@spryker-lerna/gitlab-client");
+const { createGitHubClient, parseGitRepo } = require("@spryker-lerna/github-client");
+const { ValidationError } = require("@spryker-lerna/validation-error");
 
 module.exports.createRelease = createRelease;
 module.exports.createReleaseClient = createReleaseClient;
@@ -27,7 +27,7 @@ function createReleaseClient(type) {
 /**
  * @param {ReturnType<typeof createReleaseClient>} client
  * @param {{ tags: string[]; releaseNotes: { name: string; notes: string; }[] }} commandProps
- * @param {{ gitRemote: string; execOpts: import("@lerna/child-process").ExecOpts }} opts
+ * @param {{ gitRemote: string; execOpts: import("@spryker-lerna/child-process").ExecOpts }} opts
  */
 function createRelease(client, { tags, releaseNotes }, { gitRemote, execOpts }) {
   const repo = parseGitRepo(gitRemote, execOpts);

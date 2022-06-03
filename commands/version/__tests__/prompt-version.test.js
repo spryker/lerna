@@ -1,10 +1,10 @@
 "use strict";
 
-jest.mock("@lerna/prompt");
+jest.mock("@spryker-lerna/prompt");
 
 const semver = require("semver");
-const { promptSelectOne, promptTextInput } = require("@lerna/prompt");
-const { prereleaseIdFromVersion } = require("@lerna/prerelease-id-from-version");
+const { promptSelectOne, promptTextInput } = require("@spryker-lerna/prompt");
+const { prereleaseIdFromVersion } = require("@spryker-lerna/prerelease-id-from-version");
 const { makePromptVersion } = require("../lib/prompt-version");
 
 const resolvePrereleaseId = jest.fn(() => "alpha");

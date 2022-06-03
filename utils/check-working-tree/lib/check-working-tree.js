@@ -1,8 +1,8 @@
 "use strict";
 
-const { describeRef } = require("@lerna/describe-ref");
-const { ValidationError } = require("@lerna/validation-error");
-const { collectUncommitted } = require("@lerna/collect-uncommitted");
+const { describeRef } = require("@spryker-lerna/describe-ref");
+const { ValidationError } = require("@spryker-lerna/validation-error");
+const { collectUncommitted } = require("@spryker-lerna/collect-uncommitted");
 
 module.exports.checkWorkingTree = checkWorkingTree;
 module.exports.mkThrowIfUncommitted = mkThrowIfUncommitted;

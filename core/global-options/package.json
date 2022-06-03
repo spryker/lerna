@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/global-options",
+  "name": "@spryker-lerna/global-options",
   "version": "5.0.0",
   "description": "Global options applicable to _every_ lerna sub-command",
   "keywords": [

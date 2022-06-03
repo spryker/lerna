@@ -6,7 +6,7 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "@lerna/temp-write": "file:../../utils/temp-write",
+    "@spryker-lerna/temp-write": "file:../../utils/temp-write",
     "execa": "^5.0.0"
   }
 }

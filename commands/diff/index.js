@@ -1,8 +1,8 @@
 "use strict";
 
-const childProcess = require("@lerna/child-process");
-const { Command } = require("@lerna/command");
-const { ValidationError } = require("@lerna/validation-error");
+const childProcess = require("@spryker-lerna/child-process");
+const { Command } = require("@spryker-lerna/command");
+const { ValidationError } = require("@spryker-lerna/validation-error");
 const { getLastCommit } = require("./lib/get-last-commit");
 const { hasCommit } = require("./lib/has-commit");
 

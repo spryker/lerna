@@ -2,15 +2,15 @@
 
 const { EOL } = require("os");
 const log = require("npmlog");
-const tempWrite = require("@lerna/temp-write");
-const childProcess = require("@lerna/child-process");
+const tempWrite = require("@spryker-lerna/temp-write");
+const childProcess = require("@spryker-lerna/child-process");
 
 module.exports.gitCommit = gitCommit;
 
 /**
  * @param {string} message
  * @param {{ amend: boolean; commitHooks: boolean; signGitCommit: boolean; }} gitOpts
- * @param {import("@lerna/child-process").ExecOpts} opts
+ * @param {import("@spryker-lerna/child-process").ExecOpts} opts
  */
 function gitCommit(message, { amend, commitHooks, signGitCommit }, opts) {
   log.silly("gitCommit", message);

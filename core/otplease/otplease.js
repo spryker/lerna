@@ -1,6 +1,6 @@
 "use strict";
 
-const { promptTextInput } = require("@lerna/prompt");
+const { promptTextInput } = require("@spryker-lerna/prompt");
 
 /**
  * @typedef {object} OneTimePasswordCache - Passed between concurrent executions

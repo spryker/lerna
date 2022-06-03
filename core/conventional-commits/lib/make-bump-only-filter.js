@@ -5,7 +5,7 @@ const { BLANK_LINE } = require("./constants");
 module.exports.makeBumpOnlyFilter = makeBumpOnlyFilter;
 
 /**
- * @param {import("@lerna/package").Package} pkg
+ * @param {import("@spryker-lerna/package").Package} pkg
  * @return {(entry: string) => string}
  */
 function makeBumpOnlyFilter(pkg) {

@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/temp-write",
+  "name": "@spryker-lerna/temp-write",
   "version": "5.0.0",
   "description": "Write string/buffer/stream to a random temp file",
   "homepage": "https://github.com/lerna/lerna/tree/main/utils/temp-write#readme",

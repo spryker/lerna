@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/github-client",
+  "name": "@spryker-lerna/github-client",
   "version": "5.0.0",
   "description": "An internal Lerna tool",
   "keywords": [
@@ -31,7 +31,7 @@
     "test": "echo \"Run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/child-process": "file:../../core/child-process",
+    "@spryker-lerna/child-process": "file:../../core/child-process",
     "@octokit/plugin-enterprise-rest": "^6.0.1",
     "@octokit/rest": "^18.1.0",
     "git-url-parse": "^11.4.4",

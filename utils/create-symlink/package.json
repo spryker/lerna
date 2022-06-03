@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/create-symlink",
+  "name": "@spryker-lerna/create-symlink",
   "version": "5.0.0",
   "description": "An internal Lerna tool",
   "keywords": [

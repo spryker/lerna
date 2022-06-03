@@ -1,9 +1,9 @@
 "use strict";
 
-jest.mock("@lerna/child-process");
+jest.mock("@spryker-lerna/child-process");
 
 // mocked modules
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 
 // file under test
 const { npmRunScript, npmRunScriptStreaming } = require("..");

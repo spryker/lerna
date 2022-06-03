@@ -60,7 +60,7 @@ const fixture = [
   },
 ];
 
-describe("@lerna/log-packed", () => {
+describe("@spryker-lerna/log-packed", () => {
   it("logs tarball contents from json", () => {
     fixture.forEach(logPacked);
 

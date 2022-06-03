@@ -1,12 +1,12 @@
 "use strict";
 
 const log = require("npmlog");
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 
 module.exports.getCurrentBranch = getCurrentBranch;
 
 /**
- * @param {import("@lerna/child-process").ExecOpts} opts
+ * @param {import("@spryker-lerna/child-process").ExecOpts} opts
  */
 function getCurrentBranch(opts) {
   log.silly("getCurrentBranch");

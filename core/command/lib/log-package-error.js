@@ -5,7 +5,7 @@ const log = require("npmlog");
 module.exports.logPackageError = logPackageError;
 
 /**
- * @param {import("execa").ExecaError & { pkg: import("@lerna/package").Package }} err
+ * @param {import("execa").ExecaError & { pkg: import("@spryker-lerna/package").Package }} err
  * @param {boolean} stream
  */
 function logPackageError(err, stream = false) {

@@ -10,16 +10,16 @@ const pReduce = require("p-reduce");
 const pWaterfall = require("p-waterfall");
 const semver = require("semver");
 
-const { Command } = require("@lerna/command");
-const { recommendVersion, updateChangelog } = require("@lerna/conventional-commits");
-const { checkWorkingTree, throwIfUncommitted } = require("@lerna/check-working-tree");
-const { promptConfirmation } = require("@lerna/prompt");
-const { output } = require("@lerna/output");
-const { collectUpdates, collectPackages, getPackagesForOption } = require("@lerna/collect-updates");
-const { createRunner } = require("@lerna/run-lifecycle");
-const { runTopologically } = require("@lerna/run-topologically");
-const { ValidationError } = require("@lerna/validation-error");
-const { prereleaseIdFromVersion } = require("@lerna/prerelease-id-from-version");
+const { Command } = require("@spryker-lerna/command");
+const { recommendVersion, updateChangelog } = require("@spryker-lerna/conventional-commits");
+const { checkWorkingTree, throwIfUncommitted } = require("@spryker-lerna/check-working-tree");
+const { promptConfirmation } = require("@spryker-lerna/prompt");
+const { output } = require("@spryker-lerna/output");
+const { collectUpdates, collectPackages, getPackagesForOption } = require("@spryker-lerna/collect-updates");
+const { createRunner } = require("@spryker-lerna/run-lifecycle");
+const { runTopologically } = require("@spryker-lerna/run-topologically");
+const { ValidationError } = require("@spryker-lerna/validation-error");
+const { prereleaseIdFromVersion } = require("@spryker-lerna/prerelease-id-from-version");
 
 const { getCurrentBranch } = require("./lib/get-current-branch");
 const { gitAdd } = require("./lib/git-add");

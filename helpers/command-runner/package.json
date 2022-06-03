@@ -6,6 +6,6 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "@lerna/cli": "file:../../core/cli"
+    "@spryker-lerna/cli": "file:../../core/cli"
   }
 }

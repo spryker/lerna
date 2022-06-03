@@ -1,7 +1,7 @@
 "use strict";
 
 const semver = require("semver");
-const { prereleaseIdFromVersion } = require("@lerna/prerelease-id-from-version");
+const { prereleaseIdFromVersion } = require("@spryker-lerna/prerelease-id-from-version");
 
 const PKG = Symbol("pkg");
 
@@ -10,7 +10,7 @@ const PKG = Symbol("pkg");
  */
 class PackageGraphNode {
   /**
-   * @param {import("@lerna/package").Package} pkg
+   * @param {import("@spryker-lerna/package").Package} pkg
    */
   constructor(pkg) {
     this.name = pkg.name;

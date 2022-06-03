@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/pack-directory",
+  "name": "@spryker-lerna/pack-directory",
   "version": "5.0.0",
   "description": "Pack a directory into an npm package tarball",
   "keywords": [
@@ -27,10 +27,10 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/get-packed": "file:../get-packed",
-    "@lerna/package": "file:../../core/package",
-    "@lerna/run-lifecycle": "file:../run-lifecycle",
-    "@lerna/temp-write": "file:../../utils/temp-write",
+    "@spryker-lerna/get-packed": "file:../get-packed",
+    "@spryker-lerna/package": "file:../../core/package",
+    "@spryker-lerna/run-lifecycle": "file:../run-lifecycle",
+    "@spryker-lerna/temp-write": "file:../../utils/temp-write",
     "npm-packlist": "^2.1.4",
     "npmlog": "^4.1.2",
     "tar": "^6.1.0"

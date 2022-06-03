@@ -6,10 +6,10 @@ const execa = require("execa");
 const log = require("npmlog");
 const os = require("os");
 
-const { PackageGraph } = require("@lerna/package-graph");
-const { Project } = require("@lerna/project");
-const { writeLogFile } = require("@lerna/write-log-file");
-const { ValidationError } = require("@lerna/validation-error");
+const { PackageGraph } = require("@spryker-lerna/package-graph");
+const { Project } = require("@spryker-lerna/project");
+const { writeLogFile } = require("@spryker-lerna/write-log-file");
+const { ValidationError } = require("@spryker-lerna/validation-error");
 
 const { cleanStack } = require("./lib/clean-stack");
 const { defaultOptions } = require("./lib/default-options");
@@ -179,7 +179,7 @@ class Command {
     this.concurrency = Math.max(1, +concurrency || DEFAULT_CONCURRENCY);
     this.toposort = sort === undefined || sort;
 
-    /** @type {import("@lerna/child-process").ExecOpts} */
+    /** @type {import("@spryker-lerna/child-process").ExecOpts} */
     this.execOpts = {
       cwd: this.project.rootPath,
       maxBuffer,

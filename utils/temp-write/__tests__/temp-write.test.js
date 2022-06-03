@@ -5,7 +5,7 @@ const path = require("path");
 const stream = require("stream");
 const tempWrite = require("..");
 
-describe("@lerna/temp-write", () => {
+describe("@spryker-lerna/temp-write", () => {
   it("tempWrite(string)", async () => {
     const filePath = await tempWrite("unicorn", "test.png");
     expect(fs.readFileSync(filePath, "utf8")).toEqual("unicorn");

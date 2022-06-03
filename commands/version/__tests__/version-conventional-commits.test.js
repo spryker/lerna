@@ -11,8 +11,8 @@ const semver = require("semver");
 
 // mocked modules
 const writePkg = require("write-pkg");
-const { collectUpdates } = require("@lerna/collect-updates");
-const { recommendVersion, updateChangelog } = require("@lerna/conventional-commits");
+const { collectUpdates } = require("@spryker-lerna/collect-updates");
+const { recommendVersion, updateChangelog } = require("@spryker-lerna/conventional-commits");
 
 // helpers
 const initFixture = require("@lerna-test/init-fixture")(path.resolve(__dirname, "../../publish/__tests__"));

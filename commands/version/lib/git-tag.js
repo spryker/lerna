@@ -1,14 +1,14 @@
 "use strict";
 
 const log = require("npmlog");
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 
 module.exports.gitTag = gitTag;
 
 /**
  * @param {string} tag
  * @param {{ forceGitTag: boolean; signGitTag: boolean; }} gitOpts
- * @param {import("@lerna/child-process").ExecOpts} opts
+ * @param {import("@spryker-lerna/child-process").ExecOpts} opts
  */
 function gitTag(tag, { forceGitTag, signGitTag }, opts) {
   log.silly("gitTag", tag);

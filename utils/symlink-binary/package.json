@@ -1,5 +1,5 @@
 {
-  "name": "@lerna/symlink-binary",
+  "name": "@spryker-lerna/symlink-binary",
   "version": "5.0.0",
   "description": "An internal Lerna tool",
   "keywords": [
@@ -31,8 +31,8 @@
     "test": "echo \"Run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lerna/create-symlink": "file:../create-symlink",
-    "@lerna/package": "file:../../core/package",
+    "@spryker-lerna/create-symlink": "file:../create-symlink",
+    "@spryker-lerna/package": "file:../../core/package",
     "fs-extra": "^9.1.0",
     "p-map": "^4.0.0"
   }

@@ -2,7 +2,7 @@
 
 const os = require("os");
 const execa = require("execa");
-const tempWrite = require("@lerna/temp-write");
+const tempWrite = require("@spryker-lerna/temp-write");
 
 module.exports.gitCommit = gitCommit;
 

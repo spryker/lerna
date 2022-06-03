@@ -1,7 +1,7 @@
 "use strict";
 
 const semver = require("semver");
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 
 module.exports.hasNpmVersion = hasNpmVersion;
 

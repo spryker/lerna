@@ -3,13 +3,13 @@
 const chalk = require("chalk");
 const columnify = require("columnify");
 const path = require("path");
-const { QueryGraph } = require("@lerna/query-graph");
+const { QueryGraph } = require("@spryker-lerna/query-graph");
 
 module.exports.listableFormat = listableFormat;
 
 /**
  * Format a list of packages according to specified options.
- * @param {import("@lerna/package").Package[]} pkgList
+ * @param {import("@spryker-lerna/package").Package[]} pkgList
  * @param {import("./listable-options").ListableOptions} options
  */
 function listableFormat(pkgList, options) {
@@ -52,7 +52,7 @@ function parseViewOptions(options) {
 }
 
 /**
- * @param {import("@lerna/package").Package[]} pkgList
+ * @param {import("@spryker-lerna/package").Package[]} pkgList
  * @param {ReturnType<typeof parseViewOptions>} viewOptions
  */
 function filterResultList(pkgList, viewOptions) {
@@ -132,7 +132,7 @@ function formatJSONGraph(resultList, viewOptions) {
 }
 
 /**
- * @param {import("@lerna/package").Package} pkg
+ * @param {import("@spryker-lerna/package").Package} pkg
  */
 function makeParseable(pkg) {
   const result = [pkg.location, pkg.name];

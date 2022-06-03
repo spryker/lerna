@@ -1,7 +1,7 @@
 "use strict";
 
-jest.mock("@lerna/run-lifecycle");
-jest.mock("@lerna/otplease");
+jest.mock("@spryker-lerna/run-lifecycle");
+jest.mock("@spryker-lerna/otplease");
 jest.mock("read-package-json");
 jest.mock("libnpmpublish");
 jest.mock("fs-extra");
@@ -10,12 +10,12 @@ jest.mock("fs-extra");
 const fs = require("fs-extra");
 const { publish } = require("libnpmpublish");
 const readJSON = require("read-package-json");
-const { runLifecycle } = require("@lerna/run-lifecycle");
-const { otplease } = require("@lerna/otplease");
+const { runLifecycle } = require("@spryker-lerna/run-lifecycle");
+const { otplease } = require("@spryker-lerna/otplease");
 
 // helpers
 const path = require("path");
-const { Package } = require("@lerna/package");
+const { Package } = require("@spryker-lerna/package");
 
 // file under test
 const { npmPublish } = require("..");
@@ -27,8 +27,8 @@ describe("npm-publish", () => {
   fs.readFile.mockName("fs.readFile").mockResolvedValue(mockTarData);
   publish.mockName("libnpmpublish").mockResolvedValue();
   readJSON.mockName("read-package-json").mockImplementation((file, cb) => cb(null, mockManifest));
-  runLifecycle.mockName("@lerna/run-lifecycle").mockResolvedValue();
-  otplease.mockName("@lerna/otplease").mockImplementation((cb, opts) => Promise.resolve(cb(opts)));
+  runLifecycle.mockName("@spryker-lerna/run-lifecycle").mockResolvedValue();
+  otplease.mockName("@spryker-lerna/otplease").mockImplementation((cb, opts) => Promise.resolve(cb(opts)));
 
   const tarFilePath = "/tmp/test-1.10.100.tgz";
   const rootPath = path.normalize("/test");

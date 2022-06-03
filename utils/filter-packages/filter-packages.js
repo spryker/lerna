@@ -4,7 +4,7 @@ const util = require("util");
 const multimatch = require("multimatch");
 const log = require("npmlog");
 
-const { ValidationError } = require("@lerna/validation-error");
+const { ValidationError } = require("@spryker-lerna/validation-error");
 
 module.exports.filterPackages = filterPackages;
 
@@ -12,7 +12,7 @@ module.exports.filterPackages = filterPackages;
  * Filters a list of packages, returning all packages that match the `include` glob[s]
  * and do not match the `exclude` glob[s].
  *
- * @param {import("@lerna/package").Package[]} packagesToFilter The packages to filter
+ * @param {import("@spryker-lerna/package").Package[]} packagesToFilter The packages to filter
  * @param {string[]} [include] A list of globs to match the package name against
  * @param {string[]} [exclude] A list of globs to filter the package name against
  * @param {boolean} [showPrivate] When false, filter out private packages

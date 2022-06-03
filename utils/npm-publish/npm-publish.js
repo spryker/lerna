@@ -6,9 +6,9 @@ const log = require("npmlog");
 const { publish } = require("libnpmpublish");
 const pify = require("pify");
 const readJSON = require("read-package-json");
-const { runLifecycle } = require("@lerna/run-lifecycle");
+const { runLifecycle } = require("@spryker-lerna/run-lifecycle");
 const npa = require("npm-package-arg");
-const { otplease } = require("@lerna/otplease");
+const { otplease } = require("@spryker-lerna/otplease");
 
 module.exports.npmPublish = npmPublish;
 
@@ -40,10 +40,10 @@ function flattenOptions(obj) {
 
 /**
  * Publish a package to the configured registry.
- * @param {import("@lerna/package").Package} pkg
+ * @param {import("@spryker-lerna/package").Package} pkg
  * @param {string} tarFilePath
  * @param {LibNpmPublishOptions & NpmPublishOptions} [options]
- * @param {import("@lerna/otplease").OneTimePasswordCache} [otpCache]
+ * @param {import("@spryker-lerna/otplease").OneTimePasswordCache} [otpCache]
  */
 function npmPublish(pkg, tarFilePath, options = {}, otpCache) {
   const { dryRun, ...remainingOptions } = flattenOptions(options);

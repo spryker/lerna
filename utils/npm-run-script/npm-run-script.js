@@ -2,8 +2,8 @@
 
 const log = require("npmlog");
 
-const childProcess = require("@lerna/child-process");
-const { getNpmExecOpts } = require("@lerna/get-npm-exec-opts");
+const childProcess = require("@spryker-lerna/child-process");
+const { getNpmExecOpts } = require("@spryker-lerna/get-npm-exec-opts");
 
 module.exports.npmRunScript = npmRunScript;
 module.exports.npmRunScriptStreaming = npmRunScriptStreaming;

@@ -4,7 +4,7 @@ const chalk = require("chalk");
 const tempy = require("tempy");
 const Tacks = require("tacks");
 
-const { Project } = require("@lerna/project");
+const { Project } = require("@spryker-lerna/project");
 const { loggingOutput } = require("@lerna-test/logging-output");
 const listable = require("..");
 

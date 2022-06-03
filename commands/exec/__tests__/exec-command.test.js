@@ -5,7 +5,7 @@ const fs = require("fs-extra");
 const globby = require("globby");
 
 // mocked modules
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 
 // helpers
 const initFixture = require("@lerna-test/init-fixture")(__dirname);

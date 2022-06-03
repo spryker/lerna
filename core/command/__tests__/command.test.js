@@ -8,7 +8,7 @@ const path = require("path");
 const tempy = require("tempy");
 
 // partially mocked
-const childProcess = require("@lerna/child-process");
+const childProcess = require("@spryker-lerna/child-process");
 const os = require("os");
 
 // normalize concurrency across different environments (localhost, CI, etc)

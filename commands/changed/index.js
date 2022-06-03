@@ -1,9 +1,9 @@
 "use strict";
 
-const { Command } = require("@lerna/command");
-const { collectUpdates } = require("@lerna/collect-updates");
-const listable = require("@lerna/listable");
-const { output } = require("@lerna/output");
+const { Command } = require("@spryker-lerna/command");
+const { collectUpdates } = require("@spryker-lerna/collect-updates");
+const listable = require("@spryker-lerna/listable");
+const { output } = require("@spryker-lerna/output");
 
 module.exports = factory;
 
