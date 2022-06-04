@@ -1,6 +1,6 @@
 {
   "name": "@spryker-lerna/diff",
-  "version": "5.1.0",
+  "version": "5.2.0",
   "description": "Diff all packages or a single package since the last release",
   "keywords": [
     "lerna",

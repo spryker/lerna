@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/lerna/lerna/compare/v5.0.0...v5.2.0) (2022-06-04)
+
+
+### Bug Fixes
+
+* **lerna:** fix publish config ([c74b0a2](https://github.com/lerna/lerna/commit/c74b0a24713c52af7f4d9e40fcb524207ce0ed66))
+* **pkg:** rename lerna package to @spryker-lerna/lerna ([df7fbb2](https://github.com/lerna/lerna/commit/df7fbb2f7f40e3e3bbbb0b4752137f0324209bba))
+* **scope:** update packages scopes ([b45949d](https://github.com/lerna/lerna/commit/b45949db380ad0d1e201d95b199bc33248f4794e))
+
+
+
+
+
 ## [5.1.4](https://github.com/lerna/lerna/compare/v5.1.3...v5.1.4) (2022-06-04)
 
 **Note:** Version bump only for package @spryker-lerna/lerna
