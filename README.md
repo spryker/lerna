@@ -1,3 +1,5 @@
+_This fork mainly fixes [tag version prefix issue](https://github.com/lerna/lerna/issues/2056) until the [PR](https://github.com/lerna/lerna/pull/3151) is merged you can install as [`@spryker-lerna/lerna`](https://www.npmjs.com/package/@spryker-lerna/lerna)_
+
 **Important note: this project [is changing stewardship to Nrwl](https://github.com/lerna/lerna/issues/3121)! Your favorite tool will continue to live on. Stay tuned for updates and soon a project roadmap!**
 
 <p align="center">
