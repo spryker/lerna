@@ -1,6 +1,6 @@
 {
   "name": "@spryker-lerna/bootstrap",
-  "version": "5.1.0",
+  "version": "5.1.4",
   "description": "Link local packages together and install remaining package dependencies",
   "keywords": [
     "lerna",
