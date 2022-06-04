@@ -3,6 +3,6 @@
   "version": "0.0.0-monorepo",
   "private": true,
   "devDependencies": {
-    "lerna": "*"
+    "@spryker-lerna/lerna": "*"
   }
 }

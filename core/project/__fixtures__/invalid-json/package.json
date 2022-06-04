@@ -1,6 +1,6 @@
 {
   "name": "test",
   "devDependencies": {
-    "lerna": "500.0.0",
+    "@spryker-lerna/lerna": "500.0.0"
   }
 }
