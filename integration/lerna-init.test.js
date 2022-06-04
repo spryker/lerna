@@ -29,7 +29,7 @@ describe("lerna init", () => {
     expect(packageJson).toMatchInlineSnapshot(`
       Object {
         "devDependencies": Object {
-          "lerna": "^__TEST_VERSION__",
+          "@spryker-lerna/lerna": "^__TEST_VERSION__",
         },
         "name": "root",
         "private": true,
@@ -63,7 +63,7 @@ describe("lerna init", () => {
     expect(packageJson).toMatchInlineSnapshot(`
       Object {
         "devDependencies": Object {
-          "lerna": "__TEST_VERSION__",
+          "@spryker-lerna/lerna": "__TEST_VERSION__",
         },
         "name": "updates",
       }
