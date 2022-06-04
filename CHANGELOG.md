@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.4](https://github.com/lerna/lerna/compare/v5.1.3...v5.1.4) (2022-06-04)
+
+
+### Bug Fixes
+
+* **lerna:** apply tag prefix consistenly for all modes ([8869664](https://github.com/lerna/lerna/commit/88696640a224b71f2f5297836707ff33ec995323))
+
+
+
+
+
 ## [5.1.3](https://github.com/lerna/lerna/compare/v5.1.2...v5.1.3) (2022-06-04)
 
 

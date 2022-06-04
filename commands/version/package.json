@@ -1,6 +1,6 @@
 {
   "name": "@spryker-lerna/version",
-  "version": "5.1.1",
+  "version": "5.1.4",
   "description": "Bump version of packages changed since the last release",
   "keywords": [
     "lerna",
