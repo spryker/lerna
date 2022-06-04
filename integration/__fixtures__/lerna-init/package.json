@@ -1,6 +1,6 @@
 {
   "name": "updates",
   "devDependencies": {
-    "@spryker-lerna/lerna": "__OVERWRITTEN__"
+    "lerna": "__OVERWRITTEN__"
   }
 }
