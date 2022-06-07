@@ -1,6 +1,6 @@
 {
   "name": "@spryker-lerna/publish",
-  "version": "5.2.0",
+  "version": "5.2.1",
   "description": "Publish packages in the current project",
   "keywords": [
     "lerna",
