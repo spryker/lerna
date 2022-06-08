@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.3.0](https://github.com/lerna/lerna/compare/v5.2.1...v5.3.0) (2022-06-08)
+
+
+### Bug Fixes
+
+* **utils:** orphaned child process on Windows ([#3156](https://github.com/lerna/lerna/issues/3156)) ([7e69e9e](https://github.com/lerna/lerna/commit/7e69e9e308ec36d1c7b9682673e785aaa4ce056a))
+
+
+
+
+
 # [5.2.0](https://github.com/lerna/lerna/compare/v5.0.0...v5.2.0) (2022-06-04)
 
 

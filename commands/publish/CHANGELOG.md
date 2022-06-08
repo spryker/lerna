@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.3.0](https://github.com/lerna/lerna/compare/v5.2.1...v5.3.0) (2022-06-08)
+
+
+### Features
+
+* handle the edge cases in the lerna-nx integration ([c6808fc](https://github.com/lerna/lerna/commit/c6808fc8f2dfe793bf72a64cf2d3909e0bdabba8))
+
+
+
+
+
 ## [5.2.1](https://github.com/lerna/lerna/compare/v5.2.0...v5.2.1) (2022-06-07)
 
 **Note:** Version bump only for package @spryker-lerna/publish
